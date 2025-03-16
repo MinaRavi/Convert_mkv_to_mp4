@@ -11,7 +11,7 @@ def convert_to_mp4(mkv_file):
 
 for path, folder, files in os.walk(start_dir):
     for file in files:
-        if file.endwith('.mkv'):
+        if file.endswith('.mkv'):
             print('Found 1 MKV file: %s' % file)
             convert_to_mp4(os.path.join(start_dir,file))
         else:
